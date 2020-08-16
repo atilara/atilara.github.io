@@ -1,9 +1,10 @@
 import React from 'react';
 
-import './styles.css';
 
-export default function(){
-    return(
-        <h1>Home</h1>
-    );
+import { Title } from './styles';
+
+export default function () {
+	return (
+			<Title>Home</Title>
+	);
 }
