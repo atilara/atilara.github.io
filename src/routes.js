@@ -4,7 +4,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Home from './pages/Home/index';
 import About from './pages/About/index';
 
-function Routes() {
+function Routes(props) {
 	return (
 		<BrowserRouter>
 			<Switch>
