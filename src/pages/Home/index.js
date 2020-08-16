@@ -1,10 +1,16 @@
 import React from 'react';
 
+import Header from '../../components/Header';
 
 import { Title } from './styles';
 
-export default function () {
+function Home() {
 	return (
+		<>
+			<Header />
 			<Title>Home</Title>
+		</>
 	);
 }
+
+export default Home;

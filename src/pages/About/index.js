@@ -2,6 +2,8 @@ import React from 'react';
 
 import { Title } from './styles';
 
-export default function () {
+function About() {
 	return <Title>About</Title>;
 }
+
+export default About;
