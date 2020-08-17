@@ -1,5 +1,6 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
+import { BrowserRouter } from 'react-router-dom';
 import Routes from './routes';
 
 import usePersistedState from './utils/usePersistedState';
@@ -19,11 +20,13 @@ function App() {
 	};
 
 	return (
-		<ThemeProvider theme={theme}>
-			<GlobalStyle />
-			<Header toggleTheme={toggleTheme} />
-			<Routes />
-		</ThemeProvider>
+		<BrowserRouter>
+			<ThemeProvider theme={theme}>
+				<GlobalStyle />
+				<Header toggleTheme={toggleTheme} />
+				<Routes />
+			</ThemeProvider>
+		</BrowserRouter>
 	);
 }
 
