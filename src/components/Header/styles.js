@@ -18,6 +18,10 @@ export const Nav = styled(Link)`
 export const Items = styled.div`
 	display: flex;
 	align-items: center;
+	svg {
+		cursor: pointer;
+		margin-left: 8px;
+	}
 
 	a {
 		margin: 0 10px;

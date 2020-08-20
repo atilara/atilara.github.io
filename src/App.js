@@ -23,7 +23,7 @@ function App() {
 		<BrowserRouter>
 			<ThemeProvider theme={theme}>
 				<GlobalStyle />
-				<Header toggleTheme={toggleTheme} />
+				<Header toggleTheme={toggleTheme} theme={theme} />
 				<Routes />
 			</ThemeProvider>
 		</BrowserRouter>
