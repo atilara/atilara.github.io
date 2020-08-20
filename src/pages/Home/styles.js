@@ -14,7 +14,7 @@ export const Profile = styled.div`
 	max-width: 60rem;
 	p {
 		text-align: justify;
-		margin: 1rem 0;
+		margin: 1rem 1rem;
 	}
 	@media (max-width: 800px) {
 		flex-wrap: wrap;
@@ -32,11 +32,16 @@ export const Image = styled.img`
 	border-radius: 50%;
 	border: 8px solid ${(props) => props.theme.colors.primary};
 	width: 20rem;
+	@media (max-width: 800px) {
+		width: 15rem;
+		margin: 1rem 0;
+	}
 `;
 
 export const Social = styled.div`
 	display: flex;
 	flex-direction: row;
+	margin-bottom: 2rem;
 
 	@media (max-width: 800px) {
 		flex-wrap: wrap;
