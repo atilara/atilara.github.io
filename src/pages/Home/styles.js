@@ -12,6 +12,9 @@ export const Profile = styled.div`
 	align-items: center;
 	justify-content: center;
 	max-width: 60rem;
+	h1 {
+		margin-left: 1rem;
+	}
 	p {
 		text-align: justify;
 		margin: 1rem 1rem;
