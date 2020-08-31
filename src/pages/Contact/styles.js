@@ -42,6 +42,10 @@ export const Social = styled.div`
 			margin-right: 0.4rem;
 		}
 	}
+
+	@media (max-width: 800px) {
+		font-size: 0.8rem;
+	}
 `;
 
 export const Link = styled.a`
@@ -61,6 +65,9 @@ export const Form = styled.form`
 	align-items: center;
 	h2 {
 		margin-bottom: 1rem;
+	}
+	@media (max-width: 800px) {
+		font-size: 0.9rem;
 	}
 `;
 
