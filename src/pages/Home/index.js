@@ -1,13 +1,15 @@
 import React from 'react';
 import { AiOutlineGithub, AiOutlineLinkedin } from 'react-icons/ai';
 
+import profilePic from '../../assets/me.JPG';
+
 import { Container, Profile, Image, Social, Link } from './styles';
 
 function Home() {
 	return (
 		<Container>
 			<Profile>
-				<Image src="https://www.github.com/atilara.png" alt="Me" />
+				<Image src={profilePic} alt="Me" />
 				<div>
 					<h1>Olá!</h1>
 					<p>Me chamo Átila Rodrigues! Este é o meu portfólio.</p>

@@ -7,6 +7,8 @@ import {
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.min.css';
 
+import profilePic from '../../assets/me.JPG';
+
 import {
 	Container,
 	Info,
@@ -119,10 +121,7 @@ function Contact() {
 	return (
 		<Container>
 			<Info>
-				<img
-					src="https://www.github.com/atilara.png"
-					alt="Foto de perfil"
-				/>
+				<img src={profilePic} alt="Foto de perfil" />
 				<Social>
 					<div>
 						<AiOutlineMail size={40} />
