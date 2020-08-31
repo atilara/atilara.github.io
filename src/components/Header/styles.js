@@ -9,6 +9,16 @@ export const Container = styled.div`
 	align-items: center;
 	justify-content: space-between;
 	padding: 0 20px;
+	position: relative;
+	> svg {
+		display: none;
+	}
+
+	@media (max-width: 700px) {
+		> svg {
+			display: block;
+		}
+	}
 `;
 
 export const Nav = styled(Link)`
@@ -25,5 +35,24 @@ export const Items = styled.div`
 
 	a {
 		margin: 0 10px;
+	}
+
+	@media (max-width: 700px) {
+		display: ${(props) => (props.open ? 'flex' : 'none')};
+		flex-direction: column;
+		position: absolute;
+		left: 0;
+		top: 59px;
+		height: 20vh;
+		width: 100vw;
+		background: ${(props) => props.theme.colors.primary};
+		justify-content: space-evenly;
+		a {
+			margin: 0;
+		}
+
+		svg {
+			margin: 0;
+		}
 	}
 `;
